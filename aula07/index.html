@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Colunas</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        .row {
+            height: 200px;
+            background-color: rgb(48, 108, 161);
+        }
+        .col-3 {
+            background-color: antiquewhite;
+            padding: 20px;
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatação de Colunas</h1>
+    <p>atributo 'defer' na chamada do js indica que os arquivos JS's serão carregados ao final dos outros componentes da página. <strong>Equivale a colocar a tag no final do documento!</strong></p>
+    <p> Usar fast make' : div.container>div.row>div.col-3{Coluna $}*3</p>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-3">Col 1</div>
+            <div class="col-3">Col 2</div>
+            <div class="col-3">Col 3</div>
+        </div>
+    </div>
+    <hr>
+    <p>Colunas com tamanho para o texto(+padding pré definido).<strong>Alinhamentos</strong>(relativos a altura do conteiner): <strong>start</strong>, <strong>center</strong> e <strong>end</strong></p>
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col-3">Col 1</div>
+            <div class="col-3">Col 2</div>
+            <div class="col-3">Col 3</div>
+        </div>
+    </div>
+    <hr>
+    <p>Alinhamentos individuais... Só é possível, pois toda div da classe row, também é um flexbox</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 align-self-start">Col 1</div>
+            <div class="col-3 align-self-center">Col 2</div>
+            <div class="col-3 align-self-end">Col 3</div>
+        </div>
+    </div>
+    <hr>
+    <p>Pode deixar o alinhamento da row relativo aos breakpoints</p>
+    <div class="container">
+        <div class="row align-items-sm-center">
+            <div class="col-3">Col 1</div>
+            <div class="col-3">Col 2</div>
+            <div class="col-3">Col 3</div>
+        </div>
+    </div>
+    <hr>
+    <p>Alinhamento horizontal. Iniciam com: <strong>justify-content</strong>'alguma-coisa'. start/center/end</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-3">Col 1</div>
+            <div class="col-3">Col 2</div>
+            <div class="col-3">Col 3</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-3">Col 1</div>
+            <div class="col-3">Col 2</div>
+            <div class="col-3">Col 3</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-3">Col 1</div>
+            <div class="col-3">Col 2</div>
+            <div class="col-3">Col 3</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <div class="col-3">Col 1</div>
+            <div class="col-3">Col 2</div>
+            <div class="col-3">Col 3</div>
+        </div>
+    </div>
+    <hr>
+    <p>Adicionar quebra de linha, de forma forçada. A classe w-100 do Bootstrap é usada para definir que um elemento deve ocupar 100% da largura do contêiner pai.</p>
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <div class="col-3">Col 1</div>
+            <div class="w-100"></div>
+            <div class="col-3">Col 2</div>
+            <div class="col-3">Col 3</div>
+        </div>
+    </div>
+    <hr>
+    <p>Dá para reordenar a ordem das colunas, com ordem-first/last, ou ordem-x(números)</p>
+    <div class="container">
+        <div class="row justify-content-evenly">
+            <div class="col-3">Col 1</div>
+            <div class="col-3">Col 2</div>
+            <div class="col-3 order-first">Col 3</div>
+        </div>
+    </div>
+    <hr>
+    <p>Deslocamento nas colunas. offset-1 coloca 1 coluna atrás da col pai; tal variação pode ser associada com breakpoints. Exemplo abaixo mostra 12 colunas usadas.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 offset-1">DIV 1</div>
+            <div class="col-3 offset-2">DIV 2</div>
+            <div class="col-3">DIV 3</div>
+        </div>
+    </div>
+    <hr>
+    <p>Margem automatica com ms-auto; tb associado com breakpoints. Se ambas com ms-auto, elas dividem os espaços, após se ordenarem pelo comando.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 ms-auto">DIV 1</div>
+            <div class="col-3 ms-auto">DIV 2</div>
+            <!-- <div class="col-3">DIV 3</div> -->
+        </div>
+    </div>    
+    <p>Margem automatica com mx-auto; centraliza, dividindo as margens latarais de forma automatica(margem no eixo x).</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 mx-auto">DIV 1</div>
+            <!-- <div class="col-3 ms-auto">DIV 2</div> -->
+            <!-- <div class="col-3">DIV 3</div> -->
+        </div>
+    </div>    
+    <hr>
+    <p>Colunas soltas sem conteiner do tipo "row". Acabam ficando soltas, sem compartilhar a mesma linha</p>
+    <div class="container">
+        <!-- <div class="row"> -->
+            <div class="col-3">DIV 1</div>
+            <div class="col-3">DIV 2</div>
+            <!-- <div class="col-3">DIV 3</div> -->
+        </div>
+    </div>    
+    <hr>
+    <h3><a href="/index.html">Voltar ao Início</a></h3>
+</body>
+</html>

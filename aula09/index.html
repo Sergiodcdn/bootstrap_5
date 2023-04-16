@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Imagens e Figuras</title>
+</head>
+<body>
+    <h1>Imagens e Figuras</h1>
+    <p>Atalho usado: <u>div.container>img.img-fluid[src=""]</u>. Classes: img- fluid/thumbnail(suaviza a imagem), rounded(arrendada bordas)</p>
+
+    <div class="container">
+        <img src="/aula09/imagens/cartaz1.jpg" alt="imagem responsiva" class="img-fluid rounded">
+    </div>
+    <hr>
+    <p>Class lead + img. Por padrão a imagem fica no start e texto contarna ela, dentro das classes foi alterado a ordem, assim como a justificativa do texto</p>
+    <div class="container">
+        <img src="/aula09/imagens/karate_silhouette-200.png" alt="imagem responsiva" class="img-thubnail float-end ms-3">
+        <p class="lead text-end">
+            A classe "lead" é uma classe de estilo do Bootstrap que é usada para dar destaque a um parágrafo de texto, tornando-o mais proeminente e fácil de ler. É comumente usada para o primeiro parágrafo de um bloco de texto, como um resumo ou introdução, e pode ser aplicada a qualquer elemento < p> ou < div> no HTML.
+            A classe "lead" aplica um tamanho de fonte maior e um espaçamento entre linhas aumentado, o que ajuda a destacar o texto e torná-lo mais legível. Além disso, ela também adiciona uma margem inferior ao elemento, o que ajuda a separá-lo visualmente de outros elementos de texto na página.
+        </p>
+    </div>
+    <hr>
+    <p>Imagem centralizada</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="imagens/paisagem-650.jpg" alt="" class="rounded img-fluid">
+            </div>            
+        </div>        
+    </div>
+    <hr>
+    <p>Imagem com legenda, use o elemento figure. Atalho usado: figure.figure>img-fluid.rounded[src=""]+figcaption.figcaption.text-end{Legenda da Figura}</p>
+    <div class="container text-center">
+        <figure class="figure">
+            <figcaption class="figcaption text-center">Legenda da Figura</figcaption>
+            <img class="img-fluid" src="imagens/manha.png"></img>            
+        </figure>
+    </div>
+    <hr>
+    <h3><a href="/index.html">Voltar ao Início</a></h3>
+</body>
+</html>
