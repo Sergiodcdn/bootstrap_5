@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Margens Externas e Internas</title>
+</head>
+<body>
+    <h1>Margens Externas e Internas</h1>
+    <p>Externas = margin, internas = padding</p>
+    <p>"rem" é uma unidade de medida que significa "root em", ou seja, é relativa ao tamanho da fonte raiz do documento HTML (normalmente definida como 16 pixels).</p>    
+
+    <div class="container ">
+        <table class="table table-striped table-hover table-bordered table-sm">
+            <thead class="text-center">
+                <tr>
+                    <th>Código</th>
+                    <th>Efeito</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>m/p-0</td>
+                    <td>remove toda a margem do elemento</td>
+                </tr>
+                <tr>
+                    <td>m/p-1</td>
+                    <td>adiciona uma margem pequena ao elemento (0,25 rem)</td>
+                </tr>
+                <tr>
+                    <td>m/p-2</td>
+                    <td>adiciona uma margem média ao elemento (0,5 rem)</td>
+                </tr>
+                <tr>
+                    <td>m/p-3</td>
+                    <td>adiciona uma margem grande ao elemento (1 rem)</td>
+                </tr>
+                <tr>
+                    <td>m/p-4</td>
+                    <td>adiciona uma margem muito grande ao elemento (1,5 rem)</td>
+                </tr>
+                <tr>
+                    <td>m/p-5</td>
+                    <td>adiciona uma margem enorme ao elemento (3 rem)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <p>m - s(start)/e(end)/t(top)/b(bottom). Esses sufixos deixam configurar de forma individual os espaçamentos.</p>
+    <p>p - x(horizontal)/y(vertical)</p>
+    <p>Todas as classes tem variações baseadas nos breakpoints de responsividade.</p>
+    <br>
+    <div class="container">
+        <p class="text-bg-dark m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet distinctio repudiandae, mollitia porro perferendis corrupti quidem repellendus unde ipsa debitis.</p>
+        <p class="text-bg-danger mx-4 p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae aut labore assumenda cupiditate possimus corporis voluptates incidunt, blanditiis tempore officiis?</p>
+        <p class="text-bg-dark pt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga asperiores incidunt ut beatae harum, laborum esse quo tempora tempore? Expedita!</p>
+        <p class="text-bg-transparent m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga asperiores incidunt ut beatae harum, laborum esse quo tempora tempore? Expedita!</p>
+        <p class="text-bg-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga asperiores incidunt ut beatae harum, laborum esse quo tempora tempore? Expedita!</p>
+    </div>
+
+    <br>
+
+    <div class="container bg-secondary">
+        <div class="bg-primary col-4 p-5 mx-auto">
+
+        </div>
+    </div>
+
+    <hr>
+    <h3><a href="/index.html">Voltar ao Início</a></h3>
+</body>
+</html>

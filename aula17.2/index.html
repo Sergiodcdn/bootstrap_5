@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento2</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+    <header class="p-2 text-bg-info text-center d-print-none">
+        <div class="container">
+            <h1 class="display-1">Aula 17.2 - Posicionamento p.2</h1>
+        </div>
+    </header>
+
+    <div class="container my-3">
+        <div class="p-5 bg-primary"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+
+    <hr>
+    <p>Classe gap-3(+variantes responsivas)</p>
+    <div class="container my-3 vstack gap-3">
+        <div class="p-5 bg-primary"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+
+    <hr>
+    <p>As divs com .hstack se comportam com inline-block. Div com classe vr, cria separação. Se adicionar ms-auto, joga os demais elementos pra direita</p>
+    <div class="container my-3 hstack gap-1">
+        <div class="p-5 bg-primary"></div>
+        <div class="vr ms-auto"></div>
+        <div class="p-5 bg-success"></div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+
+    <hr>
+    <p>Classe com position-absolute, faz com que ela oculpe apenas o espaço que lhe foi cabido, no caso(p-5); top-0 coloca ela no top/bottom, start-0(começo), start-50(inicio no meio da página) da pagina, start-0 end-0, preenche o final da página</p>
+    <p>Atentar para o posicionamento da div pai tb.</p>
+    <div class="container my-3">
+        <div class="p-5 bg-primary"></div>
+        <div class="p-1 bg-success position-absolute top-0">Sou do ultimo exemplo!</div>
+        <div class="p-5 bg-warning"></div>
+    </div>
+
+    <hr>
+    <h3><a href="/index.html">Voltar ao Início</a></h3>
+</body>
+</html>

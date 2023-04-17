@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Visibilidade</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        div.border {
+            height:  150px;
+        }
+    </style>
+</head>
+<body>
+    <header class="p-3 text-bg-dark text-center d-print-none">
+        <div class="container">
+            <h1 class="display-1">Aula 16 - Visibilidade</h1>
+        </div>
+    </header>
+    <article class="container my-3">
+        <h1 class="mb-4">Título do Artigo</h1>
+        <p>Adicionando 'd-print-none' na class do header, ele não seria impresso.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate suscipit, similique dolorum nemo ipsam asperiores obcaecati consectetur accusantium ullam vel, ad totam alias tempora itaque fugiat aspernatur cumque nobis sint.</p>
+        <p>Adicionando 'd-none d-print-block' ele apenas aparece na versão impressa.</p>
+        <p class="d-none d-print-block">Fonte: quemsabe.com</p>
+    </article>
+
+    <hr>
+    <p>Utilizando classes para visibilidade em diferentes condições. Bootstrap oferece varias classes para controle de visibilidade, principalmente oq diz respeito a classe css display.</p>
+    <p>Display block, ou elemento de block em si, não permite elementos ao seu lado. É o padrão de todas as div's.</p>
+
+    <div class="p-5 bg-danger"></div>
+    <div class="p-4 col-3 d-inline m-3 bg-primary"></div>
+    <div class="p-4 col-3 d-inline m-3 bg-success"></div>
+    <div class="p-4 col-3 d-inline m-3 bg-warning"></div>    
+
+    <hr>
+    <div class="p-4 col-3 d-inline-block m-3 bg-primary"></div>
+    <div class="p-4 col-3 d-inline-block m-3 bg-success"></div>
+    <div class="p-4 col-3 d-inline-block m-3 bg-warning"></div>
+
+    <hr>
+    <div class="p-4 col-3 d-block m-3 bg-primary"></div>
+    <div class="p-4 col-3 d-block m-3 bg-success"></div>
+    <div class="p-4 col-3 d-none d-md-block m-3 bg-warning"></div>
+
+    <hr>
+    <p>Class invisible, mantem o espaço deixando ela oculta.</p>
+    <div class="p-4 col-3 m-3 bg-primary"></div>
+    <div class="p-4 col-3 m-3 bg-success invisible"></div>
+    <div class="p-4 col-3 m-3 bg-warning"></div>
+    
+    <hr>
+    <p>Pelo style de inicio limitar as div.border em 150px, ela se quebra.</p>
+    <div class="container bg-info mt-3">
+        <div class="row">
+            <div class="border p-2 col-3 overflow-auto">
+                <b>Adicionando a classe: overflow-auto, se resolve com barra de rolagem. Colocada apenas se necessário.</b> Nostrum voluptate pariatur, ab explicabo adipisci earum quia quasi provident. Iste, illum iure alias nemo doloremque repellat harum nihil reiciendis temporibus soluta.
+            </div>
+            <div class="border p-2 col-3 overflow-hidden">
+                <b>Adicionando a classe: overflow-hidden, o resto fica oculto.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestias explicabo laborum at ipsam obcaecati sequi saepe asperiores, debitis dicta eaque suscipit aliquam minima consequuntur perferendis tempore sit pariatur quos!
+            </div>
+            <div class="border p-2 col-3 overflow-visible">
+                <b>Adicionando a classe: overflow-visible, mostra e fodasse, como o padrão...</b>. Deserunt mollitia quos odit a omnis et cum dignissimos adipisci quia numquam dolor maxime, veritatis aliquam ipsa, aliquid eveniet beatae illum? Animi.
+            </div>
+            <div class="border p-2 col-3 overflow-scroll">
+                <b>Adicionando a classe: overflow-scroll, se resolve com barra de rolagem em ambos eixos.</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dignissimos sequi explicabo, quod, unde aliquam facere veritatis quaerat iusto iste impedit, a nemo tempore. Nesciunt inventore modi itaque? Sequi, quisquam.
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h3><a href="/index.html">Voltar ao Início</a></h3>
+</body>
+</html>
