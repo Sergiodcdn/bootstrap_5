@@ -7,14 +7,67 @@
     <title>Select, Range e Botões</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    
 </head>
 <body>
-    <header class="m-3 p-2 rounded text-bg-primary text-center shadow">
-        <div class="container ">
-            <h1 class="display-4">Aula 19 - Select, Range e Botões</h1>
+    <header class="m-3 p-2 rounded text-bg-primary  shadow">
+        <div class="container">
+            <h1 class="display-4 text-center">Aula 19 - Select, Range e Botões</h1>
+            <p class="">Classes para configurar campos de formulários do tipo select e range, e classes para formatar botões.</p>
         </div>
     </header>
-    
+    <p>label{Opção Desejada}+select>option{Opção $}*6</p>
+
+    <p>Ao envolver o select em uma div, vc poderá diminuir o tamanho de seu campo(select segue o tamanho de seu pai).</p>
+    <p>Atributos como multiple e size dentro do select, apresentam todas as opções a priori. Uso de disable, desabilita as opções.</p>
+    <div class="container p-5">
+        <div class="mb-3">
+            <label for="">Opção Desejada</label>
+            <div class="col-4">
+                <select class="form-select" multiple size="6">
+                    <option value="">Opção 1</option>
+                    <option value="">Opção 2</option>
+                    <option value="">Opção 3</option>
+                    <option value="">Opção 4</option>
+                    <option value="">Opção 5</option>
+                    <option value="">Opção 6</option>
+                </select>
+            </div>
+        </div>
+
+        <hr>
+        <div class="mb-3">
+            <label for="faixa" class="form-label">Etapa</label>
+            <input type="range" class="form-range" id="faixa" min="1" max="5" step="1" value="2">
+        </div>
+        
+        <hr>
+        <div class="row justify-content-around bg-warning">
+            <a href="#"class="btn btn-success col-2">Link</a>
+            <a href="#" class="btn btn-outline-success col-2">Link</a>            
+        </div>
+
+        <p>Ao deixar o botão lg', todos seguiram o padrão do tamanho da box</p>
+        <div class="row justify-content-around bg-warning">
+            <a href="#"class="btn btn-success col-2">Link</a>
+            <a href="#" class="btn btn-outline-success col-2">Link</a>
+            <a href="#" class="btn btn-outline-success col-2 btn-lg">Link</a>
+        </div>
+
+        <hr>
+        <a href="#" class="btn btn-outline-success col-2 btn-sm">Link</a>
+        <a href="#" class="btn btn-outline-success col-2">Link</a>
+        <a href="#" class="btn btn-outline-success col-2 btn-lg">Link</a>
+
+        <hr>
+        <div class="row justify-content-around bg-success">
+            <button class="btn btn-warning col-2" >Botão Normal</button>
+            <button class="btn btn-warning col-2" disabled>Botão Desligado</button>
+            <button class="btn btn-primary col-2" data-bs-toggle="button">Botão Marcável</button>            
+        </div>
+        
+
+    </div>
 
     <hr>
     <h3><a href="/index.html">Voltar ao Início</a></h3>

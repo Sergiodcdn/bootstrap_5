@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos de Checagem</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    
+</head>
+<body class="bg-warning bg-opacity-25">
+    
+    <header class="bg-warning text-light p-2">
+        <div class="container">
+            <h1 class="display-3 text-center fw-bolder font-monospace">Aula 20 - Campos de Checagem</h1>
+            <p class="lead text-muted fw-bold text-end">Classes para configurar campos de checagem, <i>CHECKBOX</i> e <i>RADIO</i>.</p>
+        </div>
+    </header>
+        
+    <div class="container p-5">
+        <div class="mb-3">
+            <input type="checkbox" class="form-check-input" id="novo">
+            <label for="novo" class="form-check-label">Produto Novo</label>
+        </div>
+
+        <hr>
+        <p>O valor do value que será upado em formulários no servidor.</p>
+        <div class="mb-3 form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="novo2" name="estado" value="n">
+            <label for="novo2" class="form-check-label">Produto Novo</label>
+        </div>
+        <div class="mb-3 form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="novo2" name="estado" value="u">
+            <label for="novo2" class="form-check-label">Produto Usado</label>
+        </div>
+
+        <hr>
+        <p>form-check-inline X form-check-reverse.</p>
+        <div class="mb-3 form-check form-check-reverse">
+            <input type="radio" class="form-check-input" id="novo2" name="estado" value="n">
+            <label for="novo2" class="form-check-label">Produto Novo</label>
+        </div>
+        <div class="mb-3 form-check form-check-reverse">
+            <input type="radio" class="form-check-input" id="novo2" name="estado" value="u">
+            <label for="novo2" class="form-check-label">Produto Usado</label>
+        </div>
+
+        <hr>
+        <div class="mb-3 form-switch">
+            <input type="checkbox" class="form-check-input" id="novo">
+            <label for="novo" class="form-check-label">Produto Novo</label>
+        </div>
+
+        <hr>
+        <p>Associar <u>id</u> com o <u>for</u> para o botão funcionar. Dois modos de exibição do botão:</p> 
+        <div class="mb-3">
+            <input type="checkbox" name="" id="entregarapida" class="btn-check">
+            <label for="entregarapida" class="btn btn-primary">Entrega Rápida</label>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" name="" id="entregarapida2" class="btn-check">
+            <label for="entregarapida2" class="btn btn-outline-primary">Entrega Rápida</label>
+        </div>
+
+        <hr>
+        <p>Associados com type 'radio':</p> 
+        <div class="mb-3">
+            <input type="radio" name="tipoEntrega" id="entregarapida3" class="btn-check">
+            <label for="entregarapida3" class="btn btn-outline-primary">Entrega Rápida</label>
+        </div>
+        <div class="mb-3">
+            <input type="radio" name="tipoEntrega" id="entregalenta" class="btn-check">
+            <label for="entregalenta" class="btn btn-outline-primary">Entrega Lenta</label>
+        </div>
+    </div>
+
+    <hr>
+    <h3><a href="/index.html">Voltar ao Início</a></h3>
+</body>
+</html>

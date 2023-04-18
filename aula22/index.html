@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complementos de Campos</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        .comeco {
+            border: 2px solid #0c0c0c;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container justify-content-center comeco pb-1">
+            <h1 class="text-center fw-bold mb-3">Aula 22 - Complementos de Campos</h1>
+            <p class="text-muted text-start">Adorna os campos com textos, botões e outros inputs...</p>
+        </div>
+    </header>
+    
+    <p class="m-3">Classe 'input-group' diz que os elementos internos serão agrupandos em um único campo. Podem tambem serem aplicados a 'select' e 'file'...</p>
+    <div class="container p-5">
+        <div class="mb-3 input-group">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control">
+        </div>
+
+        <hr>
+        <p>Ao clicar em qualquer parte, o input recebe o foco.</p>
+        <div class="mb-3 input-group">            
+            <input type="text" class="form-control" id="nome">
+            <label for="nome" class="input-group-text">Nome Completo</label>
+        </div>
+
+        <hr>
+        <div class="mb-3 input-group">  
+            <label for="grana" class="input-group-text">R$</label>          
+            <input type="text" class="form-control text-end" id="grana">
+            <label for="grana" class="input-group-text">,00</label>
+        </div>
+
+        <hr>
+        <div class="mb-3 input-group">  
+            <input type="text" class="form-control text-end" id="grana">
+            <span class="input-group-text">@</span>          
+            <input type="text" class="form-control text-start" id="grana">            
+        </div>
+
+        <hr>
+        <p>Ao clicar em qualquer parte, o input recebe o foco.</p>
+        <div class="mb-3 input-group input-group-lg">            
+            <label for="texto" class="input-group-text">Mensagem</label>
+            <textarea name="" id="texto" class="form-control"></textarea>
+        </div>
+
+        <hr>
+        <div class="mb-3 input-group">            
+            <div class="input-group-text">
+                <input type="checkbox" class="form-check-input mt-0">
+            </div>
+            <input type="text" class="form-control">
+        </div>
+        
+        <hr>
+        <div class="mb-3 input-group">  
+            <span class="input-group-text">Nome Completo</span>          
+            <input type="text" class="form-control" id="nomec">
+            <input type="text" class="form-control" id="nomec">            
+        </div>
+
+        <hr>
+        <div class="mb-3 input-group">  
+            <span class="input-group-text">$</span>          
+            <span class="input-group-text">BRL</span>
+            <input type="text" class="form-control" placeholder="Valor">
+        </div>
+
+        <hr>
+        <p>Botão como placeholder, type indicado como search(pelo valor semântico). Podendo escrever no campo e efetuar a busca...</p>
+        <div class="mb-3 input-group">            
+            <input type="search" class="form-control">
+            <button class="btn btn-outline-secondary">Buscar</button>
+        </div>
+    </div>
+
+    <hr>
+    <h3><a href="/index.html">Voltar ao Início</a></h3>
+</body>
+</html>
