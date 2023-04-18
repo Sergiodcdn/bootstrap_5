@@ -9,7 +9,54 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
-    <h1>Aula 18 - Formulários</h1>
+    <header class="p-2 text-bg-success text-center">
+        <div class="container">
+            <h1 class="display-2">Aula 18 - Formulários</h1>
+        </div>
+    </header>
+    
+    <p>Varias estilizações. 'readonly' no input do email + 'value' = deixa texto, sem poder sobescrever.</p>
+    <p>Classes: 'form-control-lg', aumenta o tamanho do campo. 'form-control-sm' deixa ele pequeno. 'form-control-plaintext' deixa o campo parecendo o texto da página.</p>
+
+    <hr>
+    <div class="container p-5">
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" id="email" class="form-control form-control-lg" placeholder="Digite seu e-mail">
+                <div class="form-text">Seu e-mail está a salvo conosco!</div>
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="text" id="senha" class="form-contrl">                
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" id="lembrar" class="form-check-input">
+                <label for="lembrar" class="form-check-label">Lembrar de mim</label>                
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Entrar
+            </button>
+        </form>
+
+        <hr>
+        <input type="file" name="arquivo" id="arquivo" class="form-control">
+        <input type="color" name="cor" id="cor" class="form-control">
+
+        <hr>
+        <div class="mb-3">
+            <label for="" class="form-label">Cidade</label>
+            <input type="text" class="form-control" list="cidades" placeholder="Digite para buscar..">
+            <datalist id="cidades">
+                <option value="Cidade 1"></option>
+                <option value="Cidade 2"></option>
+                <option value="Cidade 3"></option>
+                <option value="Cidade 4"></option>
+                <option value="Cidade 5"></option>
+                <option value="Cidade 6"></option>
+            </datalist>
+        </div>
+    </div>
 
     <h3><a href="/index.html">Voltar ao Início</a></h3>
 </body>
