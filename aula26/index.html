@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barras de Navegação</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+        header {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 180px;
+            background-image: url('imagens/1.jpg');            
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            font-weight: 700;
+            border-radius: 5px;
+            text-shadow: 0.4px 0.3px 0.5px black;
+        }
+
+        header>div {
+            border-radius: 5px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header class="p-3 m-2">
+        <div class="align-items-center bg-white">
+            <div class="text-center">
+                <h1 class="">Aula 26 - Barras de Navegação</h1>
+            </div>
+            <div class="text-center">
+                <p class="">Barras de navegações modernas e bastante profissionais!</p>
+            </div>
+        </div>
+    </div>
+</header>
+    
+    <p class="font-monospace p-3">Utilizar o elemento do HTML.5 <u>nav</u> para manter uma boa semántica!</p>
+
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand d-flex align-items-center">
+                <i class="bi-bootstrap-fill fs-1 me-2"></i>
+                Bootstrap 5</a>
+            <span class="navbar-text me-auto">Curso Completo</span>
+        </div>        
+    </nav>
+
+    <hr>
+    <p class="font-monospace p-3">Adicionando itens de menu:</p>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <div class="container">
+            <a href="" class="navbar-brand d-flex align-items-center">
+                <i class="bi-bootstrap-fill fs-1 me-2"></i>
+                Bootstrap 5</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-link active">Principal</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produtos</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item">Produto 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Produto 2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Produto 3</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Produto 4</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Produto 5</a>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+            <form action="" class="d-flex">
+                <div class="input-group">
+                    <input type="search" name="" id="" class="form-control" placeholder="Buscar...">
+                    <button type="submit" class="btn btn-outline-warning">Buscar</button>
+                </div>
+            </form>
+        </div>        
+    </nav>
+
+    <hr>
+    <p class="font-monospace p-3">Outro formato:</p>
+    <nav class="navbar bg-danger navbar-danger navbar-expand-sm py-3 sticky-top">
+        <div class="container">
+            <a href="" class="navbar-brand d-flex align-items-center">
+                <i class="bi-bootstrap-fill fs-1 me-2"></i>
+                Bootstrap 5</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-link active">Principal</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produtos</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a href="#" class="dropdown-item">Produto 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Produto 2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Produto 3</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Produto 4</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Produto 5</a>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+            </div>            
+        </div>        
+    </nav>
+    <div class="container mt-3">
+        <p class="lead">Se o conteúdo da página for pouco, usar fixed-bottom e criar uma div oculta que oculpe o espaço em branco.</p>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam maxime, illo quos culpa assumenda nesciunt sed dignissimos debitis eos? Aut, veniam, minus odit laboriosam iste quas non a magnam, nulla dicta numquam quis? Provident fugit omnis quis asperiores dolores adipisci ducimus amet quia facilis laboriosam, nulla et iusto sequi voluptates sit culpa iste ut magnam. Amet praesentium velit et animi ducimus? Quas, distinctio voluptatum voluptate necessitatibus dolorum saepe quae obcaecati. Fuga ipsum rerum sunt beatae eos voluptates necessitatibus, quo non. Hic dolorem vel, maxime saepe soluta culpa dicta aspernatur. Illo libero veniam enim accusantium sunt iure id eveniet, reprehenderit voluptas.</p>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam maxime, illo quos culpa assumenda nesciunt sed dignissimos debitis eos? Aut, veniam, minus odit laboriosam iste quas non a magnam, nulla dicta numquam quis? Provident fugit omnis quis asperiores dolores adipisci ducimus amet quia facilis laboriosam, nulla et iusto sequi voluptates sit culpa iste ut magnam. Amet praesentium velit et animi ducimus? Quas, distinctio voluptatum voluptate necessitatibus dolorum saepe quae obcaecati. Fuga ipsum rerum sunt beatae eos voluptates necessitatibus, quo non. Hic dolorem vel, maxime saepe soluta culpa dicta aspernatur. Illo libero veniam enim accusantium sunt iure id eveniet, reprehenderit voluptas.</p>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam maxime, illo quos culpa assumenda nesciunt sed dignissimos debitis eos? Aut, veniam, minus odit laboriosam iste quas non a magnam, nulla dicta numquam quis? Provident fugit omnis quis asperiores dolores adipisci ducimus amet quia facilis laboriosam, nulla et iusto sequi voluptates sit culpa iste ut magnam. Amet praesentium velit et animi ducimus? Quas, distinctio voluptatum voluptate necessitatibus dolorum saepe quae obcaecati. Fuga ipsum rerum sunt beatae eos voluptates necessitatibus, quo non. Hic dolorem vel, maxime saepe soluta culpa dicta aspernatur. Illo libero veniam enim accusantium sunt iure id eveniet, reprehenderit voluptas.</p>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam maxime, illo quos culpa assumenda nesciunt sed dignissimos debitis eos? Aut, veniam, minus odit laboriosam iste quas non a magnam, nulla dicta numquam quis? Provident fugit omnis quis asperiores dolores adipisci ducimus amet quia facilis laboriosam, nulla et iusto sequi voluptates sit culpa iste ut magnam. Amet praesentium velit et animi ducimus? Quas, distinctio voluptatum voluptate necessitatibus dolorum saepe quae obcaecati. Fuga ipsum rerum sunt beatae eos voluptates necessitatibus, quo non. Hic dolorem vel, maxime saepe soluta culpa dicta aspernatur. Illo libero veniam enim accusantium sunt iure id eveniet, reprehenderit voluptas.</p>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam maxime, illo quos culpa assumenda nesciunt sed dignissimos debitis eos? Aut, veniam, minus odit laboriosam iste quas non a magnam, nulla dicta numquam quis? Provident fugit omnis quis asperiores dolores adipisci ducimus amet quia facilis laboriosam, nulla et iusto sequi voluptates sit culpa iste ut magnam. Amet praesentium velit et animi ducimus? Quas, distinctio voluptatum voluptate necessitatibus dolorum saepe quae obcaecati. Fuga ipsum rerum sunt beatae eos voluptates necessitatibus, quo non. Hic dolorem vel, maxime saepe soluta culpa dicta aspernatur. Illo libero veniam enim accusantium sunt iure id eveniet, reprehenderit voluptas.</p>
+    </div>
+    <footer class="p-2 bg-danger text-light text-center sticky-bottom">
+        <div class="row">
+            <a href="/index.html" class="text-light col-4">Voltar ao Index Principal</a>
+            <a href="index.html" class="text-light col-4">Voltar ao top desta página</a>
+        </div>
+        
+    </footer>
+        
+    
+</body>
+</html>
