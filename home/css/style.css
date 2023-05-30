@@ -1,0 +1,45 @@
+:root {
+    --cor-pai: #83532C;
+    --cor-pai2: #241000;
+    --cor-pai3: #020100;
+    --cor-pai02: #FFD4B0;
+    --cor-pai03: #FFDFC5;
+
+    --cor-aviso: #2F265A;
+    --cor-aviso2: #070319;
+    --cor-aviso3: #000001;
+    --cor-aviso02: #8C84B5;
+    --cor-aviso03: #C7BFEE;
+
+    --cor-info: #597929;
+    --cor-info2: #142100;
+    --cor-info3: #010200;
+    --cor-info02: #CFECA3;
+    --cor-info03: #E4FBC2;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: monospace;
+
+    
+    background-color: #83532C;
+}
+
+.cabeca {
+    background-color: var(--cor-pai) !important;
+    font-family: var(--fonte-destaque);
+}
+
+.fd {
+    font-family: var(--fonte-destaque);
+    font-weight: bolder;
+    color: var(--cor-pai2) !important;
+}
+
+.corpo {
+    width: 100vw;
+
+}
+
+.pai {
+    background-color: var(--corpai) !important;
+}
