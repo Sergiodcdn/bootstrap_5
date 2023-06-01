@@ -33,6 +33,13 @@
     font-family: var(--fonte-destaque);
     font-weight: bolder;
     color: var(--cor-pai2) !important;
+    text-shadow: 0px 0.2px 0.5px var(--cor-pai3);
+}
+
+.ft {
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    color: var(--cor-aviso2) !important;
 }
 
 .corpo {
@@ -42,4 +49,20 @@
 
 .pai {
     background-color: var(--corpai);
+}
+
+.sobre {
+    background-color: var(--cor-pai);    
+    border-radius: 5px;
+    box-shadow: inset;
+    border: var(--cor-info);
+    border-color: var(--cor-info);
+}
+
+h5 {
+    font-family: var(--fonte-destaque);
+    font-weight: bolder;
+    color: var(--cor-aviso) !important;
+    text-shadow: 0px 0.2px 0.5px var(--cor-aviso2);
+    font-size: xx-large ;
 }
