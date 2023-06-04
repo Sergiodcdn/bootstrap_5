@@ -21,7 +21,7 @@
     --fonte-destaque: monospace;
 
     
-    background-color: #83532C;
+    background-color: var(--cor-aviso);
 }
 
 .cabeca {
@@ -34,12 +34,13 @@
     font-weight: bolder;
     color: var(--cor-pai2) !important;
     text-shadow: 0px 0.2px 0.5px var(--cor-pai3);
+    text-align: center;
 }
 
 .ft {
     font-family: var(--fonte-padrao);
     font-weight: bold;
-    color: var(--cor-aviso2) !important;
+    color: var(--cor-pai) !important;
 }
 
 .corpo {
@@ -52,17 +53,26 @@
 }
 
 .sobre {
-    background-color: var(--cor-pai);    
-    border-radius: 5px;
+    background-color: var(--cor-aviso) !important;    
+    border-radius: 0px;
     box-shadow: inset;
     border: var(--cor-info);
     border-color: var(--cor-info);
 }
 
+.estudos {
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.contatos {
+    text-align: left;
+}
+
 h5 {
     font-family: var(--fonte-destaque);
     font-weight: bolder;
-    color: var(--cor-aviso) !important;
+    color: var(--cor-pai2) !important;
     text-shadow: 0px 0.2px 0.5px var(--cor-aviso2);
     font-size: xx-large ;
 }
